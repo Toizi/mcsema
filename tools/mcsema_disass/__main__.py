@@ -52,6 +52,15 @@ def _find_binary_ninja(path_to_binaryninja):
   except:
     return False
 
+def _find_radare2(path_to_radare2):
+  try:
+    import r2pipe
+    return True
+  except:
+    pass
+
+  return False
+
 
 def main():
   arg_parser = argparse.ArgumentParser(
@@ -173,6 +182,11 @@ def main():
       if not _find_binary_ninja(args.disassembler):
         arg_parser.error("Could not `import binaryninja`. Is it in your PYTHONPATH?")
       from binja.cfg import get_cfg
+      ret = get_cfg(args, fixed_command_args)
+    elif 'r2' in args.disassembler or 'radare2' in args.disassembler:
+      if not _find_radare2(args.disassembler):
+        arg_parser.error("Could not `import r2pipe`. Is it in your PYTHONPATH?")
+      from radare2.cfg import get_cfg
       ret = get_cfg(args, fixed_command_args)
     else:
       arg_parser.error("{} passed to --disassembler is not known.".format(

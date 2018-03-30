@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "docker exec --tty --user mcsema --workdir /home/mcsema/remill $(docker ps --filter name=mcsema --quiet) ./scripts/build.sh && docker exec --tty --user mcsema --workdir /home/mcsema/remill/remill-build $(docker ps --filter name=mcsema --quiet) sudo make install",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "sanity check",
+            "type": "shell",
+            "command": "docker exec --tty --user mcsema --workdir /home/mcsema/remill $(docker ps --filter name=mcsema --quiet) mcsema-disass --os linux --binary /bin/ls --disassembler radare2 --arch amd64 --output lul --entrypoint 0x40000",
+            "problemMatcher": []
+        }
+    ]
+}

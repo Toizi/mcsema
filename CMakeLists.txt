@@ -40,6 +40,7 @@ list(APPEND PROJECT_INCLUDEDIRECTORIES ${CMAKE_CURRENT_BINARY_DIR})
 protobuf_generate_python(PROJECT_PROTOBUFPYTHONMODULE "${CMAKE_CURRENT_SOURCE_DIR}/mcsema/CFG/CFG.proto")
 add_custom_target(protobuf_python_module_ida   DEPENDS ${PROJECT_PROTOBUFPYTHONMODULE})
 add_custom_target(protobuf_python_module_binja DEPENDS ${PROJECT_PROTOBUFPYTHONMODULE})
+add_custom_target(protobuf_python_module_radare2 DEPENDS ${PROJECT_PROTOBUFPYTHONMODULE})
 
 # disable -Werror on these file since they have been generated
 set_source_files_properties(${PROJECT_PROTOBUFSOURCEFILES} PROPERTIES COMPILE_FLAGS "-Wno-sign-conversion -Wno-shorten-64-to-32 -Wno-conversion")
@@ -81,13 +82,18 @@ add_custom_command(
     TARGET protobuf_python_module_binja PRE_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_PROTOBUFPYTHONMODULE} ${CMAKE_CURRENT_SOURCE_DIR}/tools/mcsema_disass/binja)
 
+add_custom_command(
+    TARGET protobuf_python_module_radare2 PRE_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy ${PROJECT_PROTOBUFPYTHONMODULE} ${CMAKE_CURRENT_SOURCE_DIR}/tools/mcsema_disass/radare2)
+
 # this is needed for the #include directives with absolutes paths to work correctly; it must
 # also be set to PUBLIC since mcsema-lift includes some files directly
 list(APPEND PROJECT_INCLUDEDIRECTORIES ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_dependencies(${MCSEMA_LIFT} semantics
                                 protobuf_python_module_ida
-                                protobuf_python_module_binja)
+                                protobuf_python_module_binja
+                                protobuf_python_module_radare2)
 
 target_link_libraries(${MCSEMA_LIFT} PRIVATE remill ${PROJECT_LIBRARIES})
 target_include_directories(${MCSEMA_LIFT} SYSTEM PUBLIC ${PROJECT_INCLUDEDIRECTORIES})
