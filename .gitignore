@@ -53,6 +53,7 @@ tools/dist/*
 tools/mcsema_disass.egg-info/*
 tools/mcsema_disass/ida/CFG_pb2.py
 tools/mcsema_disass/binja/CFG_pb2.py
+tools/mcsema_disass/radare2/CFG_pb2.py
 
 #ignore test binaries, only keep CFGs in git
 tests/linux/x86/*.elf
