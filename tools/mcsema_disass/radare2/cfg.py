@@ -320,8 +320,9 @@ def add_xref(pb_inst, target, mask, optype):
     debug_loc = "internal"
 
   # If the target happens to be a function, queue it for recovery
-  if get_function_at(target) is not None:
-    queue_func(target)
+  xref_func = get_function_at(target)
+  if xref_func:
+    queue_func(xref_func['offset'])
 
   debug_op = _CFG_INST_XREF_TYPE_TO_NAME[optype]
 
@@ -622,6 +623,7 @@ def recover_cfg(args):
   # Recover the entrypoint func separately
   DEBUG('Recovering CFG')
   recover_function(M, entry_ea, is_entry=True)
+  RECOVERED.add(entry_ea)
 
   # Recover any discovered functions until there are none left
   while not TO_RECOVER.empty():
