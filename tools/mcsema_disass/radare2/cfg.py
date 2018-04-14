@@ -20,6 +20,8 @@ _CFG_INST_XREF_TYPE_TO_NAME = {
     CFG_pb2.CodeReference.ControlFlowOperand: "flow"
 }
 
+PIE_MODE = True
+
 EXTERNAL_FUNCS_TO_RECOVER = {}
 EXTERNAL_VARS_TO_RECOVER = {}
 
@@ -48,7 +50,7 @@ EMAP_DATA = {}
 # `True` if we are getting the CFG of a position independent executable. This
 # affects heuristics like trying to turn immediate operands in instructions
 # into references into the data.
-PIE_MODE = False
+PIE_MODE = True
 
 # Name of the operating system that runs the program being lifted. E.g. if
 # we're lifting an ELF then this will typically be `linux`.
@@ -244,6 +246,12 @@ def get_xrefs(func, inst):
     ptr = inst.get('ptr')
     if not is_invalid_ea(ptr):
       refs.add(xrefs.XRef(ptr, xrefs.XRef.IMMEDIATE))
+    
+    if PIE_MODE:
+      val = inst.get('val')
+      if not is_invalid_ea(val):
+        DEBUG('Adding val xref')
+        refs.add(xrefs.XRef(val, xrefs.XRef.IMMEDIATE))
 
   # dis = bv.get_disassembly(il.address)
 
