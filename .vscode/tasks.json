@@ -6,7 +6,7 @@
         {
             "label": "Build",
             "type": "shell",
-            "command": "docker exec --tty --user mcsema --workdir /home/mcsema/remill $(docker ps --filter name=mcsema --quiet) ./scripts/build.sh && docker exec --tty --user mcsema --workdir /home/mcsema/remill/remill-build $(docker ps --filter name=mcsema --quiet) sudo make install",
+            "command": "docker exec --tty --user mcsema --workdir /home/mcsema/remill $(docker ps --filter name=mcsema --quiet) ./scripts/build.sh && docker exec --tty --user mcsema --workdir /home/mcsema/remill/remill-build $(docker ps --filter name=mcsema --quiet) sudo make install && docker exec --tty --user mcsema --workdir /home/mcsema/remill/tools/mcsema/examples/Maze/cfg $(docker ps --filter name=mcsema --quiet) ./test.sh",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -19,4 +19,23 @@
             "problemMatcher": []
         }
     ]
+    // test.sh, referenced above
+    // 
+    // #!/bin/sh
+    // echo "============="
+    // echo "DISASSEMBLING"
+    // echo "============="
+    // mcsema-disass --disassembler radare2 --os linux --arch amd64 --binary ../bin/maze.amd64 --out my_maze --entrypoint main > maze.amd64.log
+    // echo "============="
+    // echo "LIFTING"
+    // echo "============="
+    // mcsema-lift-4.0 --os linux --arch amd64 --cfg my_maze -output my_maze.bc
+    // echo "============="
+    // echo "COMPILING"
+    // echo "============="
+    // remill-clang-4.0 my_maze.bc -lmcsema_rt64-4.0 -o my_maze.out
+    // echo "============="
+    // echo "RUNNING"
+    // echo "============="
+    // ./my_maze.out
 }
