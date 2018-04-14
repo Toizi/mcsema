@@ -402,6 +402,10 @@ def is_noreturn_function(ea):
       DEBUG('noreturn (defs) function at 0x{:x}'.format(ea))
     return noret
   
+  no_rets = r2_cmd('tn').splitlines()
+  if func_name in no_rets:
+    return True
+  
   op = func['ops'][-1]
   noret = op['type'] != 'ret'
   if noret:
