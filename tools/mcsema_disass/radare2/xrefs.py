@@ -38,6 +38,8 @@ class XRef(object):
     return self.TYPE_TO_CFG[self.type]
 
   def __repr__(self):
+    if isinstance(self.addr, str):
+      DEBUG('XREF not a number {}'.format(self.addr))
     return '<XREF: 0x{:x} {}>'.format(self.addr, CFG_pb2.CodeReference.OperandType.Name(self.cfg_type))
 
   def __eq__(self, other):

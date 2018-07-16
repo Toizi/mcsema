@@ -1,9 +1,10 @@
 import argparse
 import CFG_pb2
+import r2pipe
 import os
 from Queue import Queue
 from collections import defaultdict
-from r2_helper import r2_cmd, r2_cmdj, r2_init
+from r2_helper import r2_cmd, r2_cmdj, r2_init, BINARY_PATH
 from util import *
 from logging import DEBUG, DEBUG_POP, DEBUG_PUSH, INIT_DEBUG_FILE
 import xrefs
@@ -222,6 +223,15 @@ def add_block(pb_func, block):
     [b for b in successors if b is not None])
   return pb_block
 
+def analyze_jump_table(refs, ea, disp):
+  '''retrieving jump table info sucks for r2 atm so this is uses a pretty ugly
+  hack where where we look for the list of basic blocks without input'''
+  DEBUG('potential jump table at 0x{:x}'.format(ea))
+  r2 = r2pipe.open(BINARY_PATH)
+  r2.cmd('e anal.jmptbl = true')
+  r2.cmd('aaa')
+  
+
 
 def get_xrefs(func, inst):
   global _LAST_UNUSED_REFS
@@ -230,6 +240,13 @@ def get_xrefs(func, inst):
 
   inst_type = inst['type']
   ea_next = inst['offset'] + inst['size']
+  inst_op = inst['opcode']
+  DEBUG('get_xrefs: 0x{:x}'.format(inst['offset']))
+  # [{"opcode":"jmp qword [rip + 0x21bad2]","disasm":"jmp qword reloc.malloc","mnemonic":"jmp","prefix":0,"id":264,"opex":{"operands":[{"size":8,"rw":0,"type":"mem","base":"rip","scale":1,"disp":2210514}],"modrm":true,"disp":2210514},"addr":4204432,"bytes":"ff25d2ba2100","ptr": 6414952,"size": 6,"type": "ujmp","reg": "rip","esil": "0x21bad2,rip,+,[8],rip,=","refptr":8,"cycles":3,"delay":0,"family":"cpu"}]
+  inst_decoded = r2_cmdj('aoj 1 @ {}'.format(inst['offset']))[0]
+  # xref_type = xrefs.XRef.IMMEDIATE
+  # if '[' in inst_op and ']' in inst_op:
+  #   xref_type = xrefs.XRef.DISPLACEMENT
   if inst_type == 'call':
     refs.add(xrefs.XRef(inst['jump'], xrefs.XRef.CONTROLFLOW))
   elif inst_type == 'jmp':
@@ -240,12 +257,30 @@ def get_xrefs(func, inst):
       refs.add(xrefs.XRef(jump, xrefs.XRef.CONTROLFLOW))
     if fail is not None and ea_next != fail:
       refs.add(xrefs.XRef(fail, xrefs.XRef.CONTROLFLOW))
+  elif inst_type == 'ujmp' or inst_type == 'ucall':
+    ptr = inst.get('ptr')
+    rip_relative = inst_decoded.get('reg') == 'rip'
+    if rip_relative:
+      refs.add(xrefs.XRef(ptr, xrefs.XRef.CONTROLFLOW))
+    else:
+      disp = get_memory_displacement(inst_decoded)
+      if disp is not None and not is_invalid_ea(disp):
+        refs.add(xrefs.XRef(disp, xrefs.XRef.DISPLACEMENT))
+        # analyze_jump_table(refs, inst['offset'])
+
   # basic reference checking for now
   # simply look at whether the ptr
   else:
     ptr = inst.get('ptr')
     if not is_invalid_ea(ptr):
-      refs.add(xrefs.XRef(ptr, xrefs.XRef.IMMEDIATE))
+      if inst['refptr']:
+        if get_memory_displacement(inst_decoded):
+          xref_type = xrefs.XRef.DISPLACEMENT
+        else:
+          xref_type = xrefs.XRef.MEMORY
+      else:
+        xref_type = xrefs.XRef.IMMEDIATE
+      refs.add(xrefs.XRef(ptr, xref_type))
     
     if PIE_MODE:
       val = inst.get('val')
@@ -455,6 +490,7 @@ def recover_function(pb_mod, addr, is_entry=False):
     # Recover every instruction in the block
     insts = r2_cmdj('pdbj @ {}'.format(block['addr']))
     for inst in insts:
+      DEBUG('INST: {}'.format(inst))
       # # Skip over anything that isn't an instruction
       # if inst.tokens[0].type != InstructionTextTokenType.InstructionToken:
       #   continue
@@ -539,7 +575,7 @@ def recover_ext_func(pb_mod, sym):
 
   func = get_function_at(sym_ea)
   if func is None:
-    WARN("get_function_at {:x} returned None. skipping {}".format(sym_ea, sym_name))
+    DEBUG("get_function_at {:x} returned None. skipping {}".format(sym_ea, sym_name))
     return
 
   eas = [sym_ea]
@@ -547,7 +583,7 @@ def recover_ext_func(pb_mod, sym):
   if is_thunk(sym_ea):
     thunk_refs = func['datarefs']
     if len(thunk_refs) != 1:
-      WARN("what appears to be a thunk at {:x} contains either no or multiple data refs".format(sym_ea))
+      DEBUG("what appears to be a thunk at {:x} contains either no or multiple data refs".format(sym_ea))
     else:
       thunk_ea = thunk_refs[0]
       DEBUG('Found thunk at {:x} for {}'.format(thunk_ea, sym_name))
@@ -679,8 +715,10 @@ def get_cfg(args, fixed_args):
   # Load the binary in radare
   r2_init(args.binary)
 
+  # DEBUG('Setting jumptable support to true')
+  r2_cmd('e anal.jmptbl=true')
   DEBUG('Running analysis')
-  r2_cmd('aaaa')
+  r2_cmd('aaa')
 
   def_paths = set(map(os.path.abspath, args.std_defs))
   

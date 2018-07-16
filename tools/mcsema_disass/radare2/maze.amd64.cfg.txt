@@ -1,0 +1,3300 @@
+name: "maze.amd64"
+funcs {
+  ea: 4195648
+  blocks {
+    ea: 4195648
+    instructions {
+      ea: 4195648
+      bytes: "H\203\354\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195652
+      bytes: "H\213\005\255\n \000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295544
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195659
+      bytes: "H\205\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195662
+      bytes: "t\005"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195669
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195664
+    successor_eas: 4195669
+  }
+  blocks {
+    ea: 4195664
+    instructions {
+      ea: 4195664
+      bytes: "\350\233\000\000\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 6295544
+        name: "off_600FF8"
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195669
+  }
+  blocks {
+    ea: 4195669
+    instructions {
+      ea: 4195669
+      bytes: "H\203\304\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195673
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: true
+  name: ".init_proc"
+}
+funcs {
+  ea: 4196086
+  blocks {
+    ea: 4196192
+    instructions {
+      ea: 4196192
+      bytes: "\277\n\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196197
+      bytes: "\350\006\376\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295824
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196202
+      bytes: "\220"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196203
+      bytes: "\311"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196204
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196166
+    instructions {
+      ea: 4196166
+      bytes: "\203}\374\n"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196170
+      bytes: "~\304"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196112
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196112
+    successor_eas: 4196172
+  }
+  blocks {
+    ea: 4196103
+    instructions {
+      ea: 4196103
+      bytes: "\307E\374\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196110
+      bytes: "\3536"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196166
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196166
+  }
+  blocks {
+    ea: 4196172
+    instructions {
+      ea: 4196172
+      bytes: "\277\n\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196177
+      bytes: "\350\032\376\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295824
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196182
+      bytes: "\203E\370\001"
+      lp_ea: 0
+    }
+    successor_eas: 4196186
+  }
+  blocks {
+    ea: 4196112
+    instructions {
+      ea: 4196112
+      bytes: "\213E\374"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196115
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196118
+      bytes: "\213E\370"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196121
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196124
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196127
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196131
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196134
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196137
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196140
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196143
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196149
+      bytes: "\017\266\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196152
+      bytes: "\017\276\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196155
+      bytes: "\211\307"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196157
+      bytes: "\350.\376\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295824
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196162
+      bytes: "\203E\374\001"
+      lp_ea: 0
+    }
+    successor_eas: 4196166
+  }
+  blocks {
+    ea: 4196086
+    instructions {
+      ea: 4196086
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196087
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196090
+      bytes: "H\203\354\020"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196094
+      bytes: "\307E\370\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196101
+      bytes: "\353S"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196186
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196186
+  }
+  blocks {
+    ea: 4196186
+    instructions {
+      ea: 4196186
+      bytes: "\203}\370\006"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196190
+      bytes: "~\247"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196103
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196192
+    successor_eas: 4196103
+  }
+  is_entrypoint: true
+  name: "draw"
+}
+funcs {
+  ea: 4197076
+  blocks {
+    ea: 4197076
+    instructions {
+      ea: 4197076
+      bytes: "H\203\354\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197080
+      bytes: "H\203\304\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197084
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: true
+  name: ".term_proc"
+}
+funcs {
+  ea: 4196960
+  blocks {
+    ea: 4196960
+    instructions {
+      ea: 4196960
+      bytes: "AW"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196962
+      bytes: "AV"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196964
+      bytes: "A\211\377"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196967
+      bytes: "AU"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196969
+      bytes: "AT"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196971
+      bytes: "L\215%\236\003 \000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295056
+        name: "__frame_dummy_init_array_entry"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196978
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196979
+      bytes: "H\215-\236\003 \000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295064
+        name: "__do_global_dtors_aux_fini_array_entry"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196986
+      bytes: "S"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196987
+      bytes: "I\211\366"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196990
+      bytes: "I\211\325"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196993
+      bytes: "L)\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196996
+      bytes: "H\203\354\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197000
+      bytes: "H\301\375\003"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197004
+      bytes: "\350\257\372\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195648
+        name: ".init_proc"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197009
+      bytes: "H\205\355"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197012
+      bytes: "t "
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4197046
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4197046
+    successor_eas: 4197014
+  }
+  blocks {
+    ea: 4197024
+    instructions {
+      ea: 4197024
+      bytes: "L\211\352"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197027
+      bytes: "L\211\366"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197030
+      bytes: "D\211\377"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197033
+      bytes: "A\377\024\334"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197037
+      bytes: "H\203\303\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197041
+      bytes: "H9\353"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197044
+      bytes: "u\352"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4197024
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4197024
+    successor_eas: 4197046
+  }
+  blocks {
+    ea: 4197014
+    instructions {
+      ea: 4197014
+      bytes: "1\333"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197016
+      bytes: "\017\037\204\000\000\000\000\000"
+      lp_ea: 0
+    }
+    successor_eas: 4197024
+  }
+  blocks {
+    ea: 4197046
+    instructions {
+      ea: 4197046
+      bytes: "H\203\304\010"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197050
+      bytes: "["
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197051
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197052
+      bytes: "A\\"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197054
+      bytes: "A]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197056
+      bytes: "A^"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197058
+      bytes: "A_"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4197060
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "__libc_csu_init"
+}
+funcs {
+  ea: 4195824
+  blocks {
+    ea: 4195824
+    instructions {
+      ea: 4195824
+      bytes: "\377%\002\n \000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295544
+      }
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "__gmon_start__"
+}
+funcs {
+  ea: 4196205
+  blocks {
+    ea: 4196480
+    instructions {
+      ea: 4196480
+      bytes: "\203m\274\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196484
+      bytes: "\353$"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196522
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196522
+  }
+  blocks {
+    ea: 4196608
+    instructions {
+      ea: 4196608
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196611
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196614
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196617
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196620
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196623
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196627
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196630
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196633
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196636
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196639
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196645
+      bytes: "\017\266\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196648
+      bytes: "< "
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196650
+      bytes: "tJ"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196726
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196652
+    successor_eas: 4196726
+  }
+  blocks {
+    ea: 4196950
+    instructions {
+      ea: 4196950
+      bytes: "\311"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196951
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196486
+    instructions {
+      ea: 4196486
+      bytes: "\203E\274\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196490
+      bytes: "\353\036"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196522
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196522
+  }
+  blocks {
+    ea: 4196492
+    instructions {
+      ea: 4196492
+      bytes: "\277\220\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197264
+        name: "aWrongCommandOn"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196497
+      bytes: "\350\352\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196502
+      bytes: "\277\273\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197307
+        name: "aYouLose"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196507
+      bytes: "\350\340\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196512
+      bytes: "\277\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196517
+      bytes: "\350&\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295872
+        name: "exit"
+      }
+      local_noreturn: true
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196757
+    instructions {
+      ea: 4196757
+      bytes: "\213E\314"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196760
+      bytes: ";E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196763
+      bytes: "u\007"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196772
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196772
+    successor_eas: 4196765
+  }
+  blocks {
+    ea: 4196765
+    instructions {
+      ea: 4196765
+      bytes: "\271\344\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197348
+        name: "aBlocked"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196770
+      bytes: "\353\005"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196777
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196777
+  }
+  blocks {
+    ea: 4196772
+    instructions {
+      ea: 4196772
+      bytes: "\271\355\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197357
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196777
+  }
+  blocks {
+    ea: 4196777
+    instructions {
+      ea: 4196777
+      bytes: "\213E\304"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196780
+      bytes: "H\230"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196782
+      bytes: "\017\266D\005\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196787
+      bytes: "\017\276\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196790
+      bytes: "\213E\304"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196793
+      bytes: "\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196795
+      bytes: "\277\360\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197360
+        name: "aIterationNo_D_"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196800
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196805
+      bytes: "\350\326\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196810
+      bytes: "\213E\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196813
+      bytes: ";E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196816
+      bytes: "u\034"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196846
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196818
+    successor_eas: 4196846
+  }
+  blocks {
+    ea: 4196522
+    instructions {
+      ea: 4196522
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196525
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196528
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196531
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196534
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196537
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196541
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196544
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196547
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196550
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196553
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196559
+      bytes: "\017\266\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196562
+      bytes: "<#"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196564
+      bytes: "u*"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196608
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196608
+    successor_eas: 4196566
+  }
+  blocks {
+    ea: 4196652
+    instructions {
+      ea: 4196652
+      bytes: "\203}\300\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196656
+      bytes: "u8"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196714
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196658
+    successor_eas: 4196714
+  }
+  blocks {
+    ea: 4196658
+    instructions {
+      ea: 4196658
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196661
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196664
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196667
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196670
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196673
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196677
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196680
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196683
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196686
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196689
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196695
+      bytes: "\017\266\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196698
+      bytes: "<|"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196700
+      bytes: "u\014"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196714
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196714
+    successor_eas: 4196702
+  }
+  blocks {
+    ea: 4196915
+    instructions {
+      ea: 4196915
+      bytes: "\277\022\014@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197394
+        name: "aYouLose_0"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196920
+      bytes: "\350C\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196925
+      bytes: "\270\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196930
+      bytes: "H\213u\370"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196934
+      bytes: "dH34%(\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196943
+      bytes: "t\005"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196950
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196945
+    successor_eas: 4196950
+  }
+  blocks {
+    ea: 4196446
+    instructions {
+      ea: 4196446
+      bytes: "\203\370d"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196449
+      bytes: "\177\007"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196458
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196458
+    successor_eas: 4196451
+  }
+  blocks {
+    ea: 4196416
+    instructions {
+      ea: 4196416
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196419
+      bytes: "\211E\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196422
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196425
+      bytes: "\211E\314"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196428
+      bytes: "\213E\304"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196431
+      bytes: "H\230"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196433
+      bytes: "\017\266D\005\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196438
+      bytes: "\017\276\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196441
+      bytes: "\203\370d"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196444
+      bytes: "t("
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196486
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196486
+    successor_eas: 4196446
+  }
+  blocks {
+    ea: 4196945
+    instructions {
+      ea: 4196945
+      bytes: "\350:\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295840
+        name: "__stack_chk_fail"
+      }
+      local_noreturn: true
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196818
+    instructions {
+      ea: 4196818
+      bytes: "\213E\314"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196821
+      bytes: ";E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196824
+      bytes: "u\024"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196846
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196826
+    successor_eas: 4196846
+  }
+  blocks {
+    ea: 4196566
+    instructions {
+      ea: 4196566
+      bytes: "\277\305\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197317
+        name: "aYouWin"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196571
+      bytes: "\350\240\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196576
+      bytes: "H\215E\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196580
+      bytes: "H\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196583
+      bytes: "\277\316\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197326
+        name: "aYourSolution42"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196588
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196593
+      bytes: "\350\252\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196598
+      bytes: "\277\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196603
+      bytes: "\350\320\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295872
+        name: "exit"
+      }
+      local_noreturn: true
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196826
+    instructions {
+      ea: 4196826
+      bytes: "\277\022\014@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197394
+        name: "aYouLose_0"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196831
+      bytes: "\350\234\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196836
+      bytes: "\277\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196841
+      bytes: "\350\342\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295872
+        name: "exit"
+      }
+      local_noreturn: true
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4196702
+    instructions {
+      ea: 4196702
+      bytes: "\203}\274\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196706
+      bytes: "~\006"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196714
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196714
+    successor_eas: 4196708
+  }
+  blocks {
+    ea: 4196451
+    instructions {
+      ea: 4196451
+      bytes: "\203\370a"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196454
+      bytes: "t\030"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196480
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196456
+    successor_eas: 4196480
+  }
+  blocks {
+    ea: 4196708
+    instructions {
+      ea: 4196708
+      bytes: "\203}\274\n"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196712
+      bytes: "~\014"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196726
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196714
+    successor_eas: 4196726
+  }
+  blocks {
+    ea: 4196456
+    instructions {
+      ea: 4196456
+      bytes: "\353\""
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196492
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196492
+  }
+  blocks {
+    ea: 4196714
+    instructions {
+      ea: 4196714
+      bytes: "\213E\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196717
+      bytes: "\211E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196720
+      bytes: "\213E\314"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196723
+      bytes: "\211E\300"
+      lp_ea: 0
+    }
+    successor_eas: 4196726
+  }
+  blocks {
+    ea: 4196205
+    instructions {
+      ea: 4196205
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196206
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196209
+      bytes: "H\203\354`"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196213
+      bytes: "\211}\254"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196216
+      bytes: "H\211u\240"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196220
+      bytes: "dH\213\004%(\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196229
+      bytes: "H\211E\370"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196233
+      bytes: "1\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196235
+      bytes: "\307E\304\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196242
+      bytes: "\307E\274\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196249
+      bytes: "\307E\300\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196256
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196259
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196262
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196265
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196268
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196271
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196275
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196278
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196281
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196284
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196287
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196293
+      bytes: "\306\000X"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196296
+      bytes: "\272\007\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196301
+      bytes: "\276\013\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196306
+      bytes: "\277\350\n@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197096
+        name: "format"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196311
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196316
+      bytes: "\350\277\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196321
+      bytes: "\213U\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196324
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196327
+      bytes: "\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196329
+      bytes: "\277\000\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197120
+        name: "aPlayerPosition"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196334
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196339
+      bytes: "\350\250\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196344
+      bytes: "\213E\304"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196347
+      bytes: "\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196349
+      bytes: "\277\030\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197144
+        name: "aIterationNo_D"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196354
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196359
+      bytes: "\350\224\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196364
+      bytes: "\2770\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197168
+        name: "s"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196369
+      bytes: "\350j\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196374
+      bytes: "\277r\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197234
+        name: "aTryToReachTheP"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196379
+      bytes: "\350`\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295832
+        name: "puts"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196384
+      bytes: "\350\321\376\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196086
+        name: "draw"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196389
+      bytes: "H\215E\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196393
+      bytes: "\272\034\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196398
+      bytes: "H\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196401
+      bytes: "\277\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196406
+      bytes: "\350u\375\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295856
+        name: "read"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196411
+      bytes: "\351\351\001\000\000"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196905
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196905
+  }
+  blocks {
+    ea: 4196846
+    instructions {
+      ea: 4196846
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196849
+      bytes: "Hc\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196852
+      bytes: "\213E\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196855
+      bytes: "Hc\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196858
+      bytes: "H\211\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196861
+      bytes: "H\301\340\002"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196865
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196868
+      bytes: "H\001\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196871
+      bytes: "H\001\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196874
+      bytes: "H\001\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196877
+      bytes: "H\005\200\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295680
+        name: "maze"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196883
+      bytes: "\306\000X"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196886
+      bytes: "\350\333\374\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196086
+        name: "draw"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196891
+      bytes: "\203E\304\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196895
+      bytes: "\277\001\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196900
+      bytes: "\350\267\373\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295880
+        name: "sleep"
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196905
+  }
+  blocks {
+    ea: 4196463
+    instructions {
+      ea: 4196463
+      bytes: "\203\370w"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196466
+      bytes: "u\030"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196492
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196492
+    successor_eas: 4196468
+  }
+  blocks {
+    ea: 4196468
+    instructions {
+      ea: 4196468
+      bytes: "\203m\300\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196472
+      bytes: "\3530"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196522
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196522
+  }
+  blocks {
+    ea: 4196726
+    instructions {
+      ea: 4196726
+      bytes: "\213U\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196729
+      bytes: "\213E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196732
+      bytes: "\211\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196734
+      bytes: "\277\000\013@\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197120
+        name: "aPlayerPosition"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196739
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196744
+      bytes: "\350\023\374\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295848
+        name: "printf"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196749
+      bytes: "\213E\310"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196752
+      bytes: ";E\274"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196755
+      bytes: "u\017"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196772
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196772
+    successor_eas: 4196757
+  }
+  blocks {
+    ea: 4196905
+    instructions {
+      ea: 4196905
+      bytes: "\203}\304\033"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196909
+      bytes: "\017\216\r\376\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196416
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196416
+    successor_eas: 4196915
+  }
+  blocks {
+    ea: 4196474
+    instructions {
+      ea: 4196474
+      bytes: "\203E\300\001"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196478
+      bytes: "\353*"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196522
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196522
+  }
+  blocks {
+    ea: 4196458
+    instructions {
+      ea: 4196458
+      bytes: "\203\370s"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196461
+      bytes: "t\013"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196474
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196474
+    successor_eas: 4196463
+  }
+  is_entrypoint: true
+  name: "main"
+}
+funcs {
+  ea: 4197072
+  blocks {
+    ea: 4197072
+    instructions {
+      ea: 4197072
+      bytes: "\363\303"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "__libc_csu_fini"
+}
+funcs {
+  ea: 4195840
+  blocks {
+    ea: 4195840
+    instructions {
+      ea: 4195840
+      bytes: "1\355"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195842
+      bytes: "I\211\321"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195845
+      bytes: "^"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195846
+      bytes: "H\211\342"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195849
+      bytes: "H\203\344\360"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195853
+      bytes: "P"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195854
+      bytes: "T"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195855
+      bytes: "I\307\300\320\n@\000"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4197072
+        name: "__libc_csu_fini"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195862
+      bytes: "H\307\301`\n@\000"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4196960
+        name: "__libc_csu_init"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195869
+      bytes: "H\307\307m\007@\000"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 4196205
+        name: "main"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195876
+      bytes: "\350\227\377\377\377"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ControlFlowOperand
+        location: External
+        ea: 6295864
+        name: "__libc_start_main"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195881
+      bytes: "\364"
+      local_noreturn: true
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "_start"
+}
+funcs {
+  ea: 4195888
+  blocks {
+    ea: 4195888
+    instructions {
+      ea: 4195888
+      bytes: "\270\327\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295767
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195893
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195894
+      bytes: "H-\320\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295760
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195900
+      bytes: "H\203\370\016"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195904
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195907
+      bytes: "v\033"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195936
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195936
+    successor_eas: 4195909
+  }
+  blocks {
+    ea: 4195936
+    instructions {
+      ea: 4195936
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195937
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4195909
+    instructions {
+      ea: 4195909
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195914
+      bytes: "H\205\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195917
+      bytes: "t\021"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195936
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195936
+    successor_eas: 4195919
+  }
+  blocks {
+    ea: 4195919
+    instructions {
+      ea: 4195919
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195920
+      bytes: "\277\320\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295760
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195925
+      bytes: "\377\340"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "deregister_tm_clones"
+}
+funcs {
+  ea: 4195952
+  blocks {
+    ea: 4195952
+    instructions {
+      ea: 4195952
+      bytes: "\276\320\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295760
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195957
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195958
+      bytes: "H\201\356\320\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295760
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195965
+      bytes: "H\301\376\003"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195969
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195972
+      bytes: "H\211\360"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195975
+      bytes: "H\301\350?"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195979
+      bytes: "H\001\306"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195982
+      bytes: "H\321\376"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195985
+      bytes: "t\025"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196008
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196008
+    successor_eas: 4195987
+  }
+  blocks {
+    ea: 4196008
+    instructions {
+      ea: 4196008
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196009
+      bytes: "\303"
+      lp_ea: 0
+    }
+  }
+  blocks {
+    ea: 4195987
+    instructions {
+      ea: 4195987
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195992
+      bytes: "H\205\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195995
+      bytes: "t\013"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196008
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196008
+    successor_eas: 4195997
+  }
+  blocks {
+    ea: 4195997
+    instructions {
+      ea: 4195997
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4195998
+      bytes: "\277\320\020`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: External
+        ea: 6295760
+        name: "putchar"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196003
+      bytes: "\377\340"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "register_tm_clones"
+}
+funcs {
+  ea: 4196016
+  blocks {
+    ea: 4196016
+    instructions {
+      ea: 4196016
+      bytes: "\200=\026\n \000\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295757
+        name: "__bss_start"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196023
+      bytes: "u\021"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196042
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196025
+    successor_eas: 4196042
+  }
+  blocks {
+    ea: 4196025
+    instructions {
+      ea: 4196025
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196026
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196029
+      bytes: "\350n\377\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195888
+        name: "deregister_tm_clones"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196034
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196035
+      bytes: "\306\005\003\n \000\001"
+      xrefs {
+        target_type: DataTarget
+        operand_type: MemoryOperand
+        location: Internal
+        ea: 6295757
+        name: "__bss_start"
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196042
+  }
+  blocks {
+    ea: 4196042
+    instructions {
+      ea: 4196042
+      bytes: "\363\303"
+      lp_ea: 0
+    }
+  }
+  is_entrypoint: false
+  name: "__do_global_dtors_aux"
+}
+funcs {
+  ea: 4196048
+  blocks {
+    ea: 4196048
+    instructions {
+      ea: 4196048
+      bytes: "\277 \016`\000"
+      xrefs {
+        target_type: DataTarget
+        operand_type: ImmediateOperand
+        location: Internal
+        ea: 6295072
+        name: "__JCR_LIST__"
+      }
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196053
+      bytes: "H\203?\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196057
+      bytes: "u\005"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196064
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196064
+    successor_eas: 4196059
+  }
+  blocks {
+    ea: 4196064
+    instructions {
+      ea: 4196064
+      bytes: "\270\000\000\000\000"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196069
+      bytes: "H\205\300"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196072
+      bytes: "t\361"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4196059
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4196074
+    successor_eas: 4196059
+  }
+  blocks {
+    ea: 4196074
+    instructions {
+      ea: 4196074
+      bytes: "U"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196075
+      bytes: "H\211\345"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196078
+      bytes: "\377\320"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196080
+      bytes: "]"
+      lp_ea: 0
+    }
+    instructions {
+      ea: 4196081
+      bytes: "\351z\377\377\377"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195952
+        name: "register_tm_clones"
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195952
+  }
+  blocks {
+    ea: 4196059
+    instructions {
+      ea: 4196059
+      bytes: "\353\223"
+      xrefs {
+        target_type: CodeTarget
+        operand_type: ControlFlowOperand
+        location: Internal
+        ea: 4195952
+        name: "register_tm_clones"
+      }
+      lp_ea: 0
+    }
+    successor_eas: 4195952
+  }
+  is_entrypoint: false
+  name: "frame_dummy"
+}
+segments {
+  ea: 4195648
+  data: "H\203\354\010H\213\005\255\n \000H\205\300t\005\350\233\000\000\000H\203\304\010\303"
+  read_only: true
+  is_external: false
+  name: ".init"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 4195680
+  data: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\377%\242\n \000\000\000\000\000\000\000\000\000\000\000\377%\232\n \000\000\000\000\000\000\000\000\000\000\000\377%\222\n \000\000\000\000\000\000\000\000\000\000\000\377%\212\n \000\000\000\000\000\000\000\000\000\000\000\377%\202\n \000\000\000\000\000\000\000\000\000\000\000\377%z\n \000\000\000\000\000\000\000\000\000\000\000\377%r\n \000\000\000\000\000\000\000\000\000\000\000\377%j\n \000\000\000\000\000\000\000\000\000\000\000"
+  read_only: true
+  is_external: false
+  name: ".plt"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 6295552
+  data: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\020\021`\000\000\000\000\000\030\021`\000\000\000\000\000 \021`\000\000\000\000\000(\021`\000\000\000\000\0000\021`\000\000\000\000\0008\021`\000\000\000\000\000@\021`\000\000\000\000\000H\021`\000\000\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".got.plt"
+  is_exported: false
+  is_thread_local: false
+  xrefs {
+    ea: 6295576
+    width: 8
+    target_ea: 6295824
+    target_name: "putchar"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295584
+    width: 8
+    target_ea: 6295832
+    target_name: "puts"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295592
+    width: 8
+    target_ea: 6295840
+    target_name: "__stack_chk_fail"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295600
+    width: 8
+    target_ea: 6295848
+    target_name: "printf"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295608
+    width: 8
+    target_ea: 6295856
+    target_name: "read"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295616
+    width: 8
+    target_ea: 6295864
+    target_name: "__libc_start_main"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295624
+    width: 8
+    target_ea: 6295872
+    target_name: "exit"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295632
+    width: 8
+    target_ea: 6295880
+    target_name: "sleep"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+}
+segments {
+  ea: 6295648
+  data: "\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".data"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 6295680
+  data: "+-+---+---+| |     |#|| | --+ | || |   | | || +-- | | ||     |   |+-----+---+"
+  read_only: false
+  is_external: false
+  name: ".data"
+  variable_name: "maze"
+  is_exported: true
+  is_thread_local: false
+  vars {
+    ea: 6295680
+    name: "maze"
+  }
+}
+segments {
+  ea: 6295757
+  data: "\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".bss"
+  variable_name: "__bss_start"
+  is_exported: true
+  is_thread_local: false
+  vars {
+    ea: 6295757
+    name: "__bss_start"
+  }
+}
+segments {
+  ea: 4195824
+  data: "\377%\002\n \000f\220"
+  read_only: true
+  is_external: false
+  name: ".plt.got"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 6295544
+  data: "X\021`\000\000\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".got"
+  is_exported: false
+  is_thread_local: false
+  xrefs {
+    ea: 6295544
+    width: 8
+    target_ea: 6295896
+    target_name: "__gmon_start__"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+}
+segments {
+  ea: 6295056
+  data: "\320\006@\000\000\000\000\000\260\006@\000\000\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".init_array"
+  is_exported: false
+  is_thread_local: false
+  xrefs {
+    ea: 6295056
+    width: 8
+    target_ea: 4196048
+    target_name: "frame_dummy"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  xrefs {
+    ea: 6295064
+    width: 8
+    target_ea: 4196016
+    target_name: "__do_global_dtors_aux"
+    target_is_code: true
+    target_fixup_kind: Absolute
+  }
+  vars {
+    ea: 6295056
+    name: "__frame_dummy_init_array_entry"
+  }
+  vars {
+    ea: 6295064
+    name: "__do_global_dtors_aux_fini_array_entry"
+  }
+}
+segments {
+  ea: 4197076
+  data: "H\203\354\010H\203\304\010\303"
+  read_only: true
+  is_external: false
+  name: ".fini"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 4195840
+  data: "1\355I\211\321^H\211\342H\203\344\360PTI\307\300\320\n@\000H\307\301`\n@\000H\307\307m\007@\000\350\227\377\377\377\364f\017\037D\000\000\270\327\020`\000UH-\320\020`\000H\203\370\016H\211\345v\033\270\000\000\000\000H\205\300t\021]\277\320\020`\000\377\340f\017\037\204\000\000\000\000\000]\303\017\037@\000f.\017\037\204\000\000\000\000\000\276\320\020`\000UH\201\356\320\020`\000H\301\376\003H\211\345H\211\360H\301\350?H\001\306H\321\376t\025\270\000\000\000\000H\205\300t\013]\277\320\020`\000\377\340\017\037\000]\303f\017\037D\000\000\200=\026\n \000\000u\021UH\211\345\350n\377\377\377]\306\005\003\n \000\001\363\303\017\037@\000\277 \016`\000H\203?\000u\005\353\223\017\037\000\270\000\000\000\000H\205\300t\361UH\211\345\377\320]\351z\377\377\377UH\211\345H\203\354\020\307E\370\000\000\000\000\353S\307E\374\000\000\000\000\3536\213E\374Hc\310\213E\370Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\017\266\000\017\276\300\211\307\350.\376\377\377\203E\374\001\203}\374\n~\304\277\n\000\000\000\350\032\376\377\377\203E\370\001\203}\370\006~\247\277\n\000\000\000\350\006\376\377\377\220\311\303UH\211\345H\203\354`\211}\254H\211u\240dH\213\004%(\000\000\000H\211E\3701\300\307E\304\000\000\000\000\307E\274\001\000\000\000\307E\300\001\000\000\000\213E\274Hc\310\213E\300Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\306\000X\272\007\000\000\000\276\013\000\000\000\277\350\n@\000\270\000\000\000\000\350\277\375\377\377\213U\300\213E\274\211\306\277\000\013@\000\270\000\000\000\000\350\250\375\377\377\213E\304\211\306\277\030\013@\000\270\000\000\000\000\350\224\375\377\377\2770\013@\000\350j\375\377\377\277r\013@\000\350`\375\377\377\350\321\376\377\377H\215E\320\272\034\000\000\000H\211\306\277\000\000\000\000\350u\375\377\377\351\351\001\000\000\213E\274\211E\310\213E\300\211E\314\213E\304H\230\017\266D\005\320\017\276\300\203\370dt(\203\370d\177\007\203\370at\030\353\"\203\370st\013\203\370wu\030\203m\300\001\3530\203E\300\001\353*\203m\274\001\353$\203E\274\001\353\036\277\220\013@\000\350\352\374\377\377\277\273\013@\000\350\340\374\377\377\277\001\000\000\000\350&\375\377\377\213E\274Hc\310\213E\300Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\017\266\000<#u*\277\305\013@\000\350\240\374\377\377H\215E\320H\211\306\277\316\013@\000\270\000\000\000\000\350\252\374\377\377\277\000\000\000\000\350\320\374\377\377\213E\274Hc\310\213E\300Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\017\266\000< tJ\203}\300\002u8\213E\274Hc\310\213E\300Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\017\266\000<|u\014\203}\274\000~\006\203}\274\n~\014\213E\310\211E\274\213E\314\211E\300\213U\300\213E\274\211\306\277\000\013@\000\270\000\000\000\000\350\023\374\377\377\213E\310;E\274u\017\213E\314;E\300u\007\271\344\013@\000\353\005\271\355\013@\000\213E\304H\230\017\266D\005\320\017\276\320\213E\304\211\306\277\360\013@\000\270\000\000\000\000\350\326\373\377\377\213E\310;E\274u\034\213E\314;E\300u\024\277\022\014@\000\350\234\373\377\377\277\001\000\000\000\350\342\373\377\377\213E\274Hc\310\213E\300Hc\320H\211\320H\301\340\002H\001\320H\001\300H\001\320H\001\310H\005\200\020`\000\306\000X\350\333\374\377\377\203E\304\001\277\001\000\000\000\350\267\373\377\377\203}\304\033\017\216\r\376\377\377\277\022\014@\000\350C\373\377\377\270\001\000\000\000H\213u\370dH34%(\000\000\000t\005\350:\373\377\377\311\303\017\037\204\000\000\000\000\000AWAVA\211\377AUATL\215%\236\003 \000UH\215-\236\003 \000SI\211\366I\211\325L)\345H\203\354\010H\301\375\003\350\257\372\377\377H\205\355t 1\333\017\037\204\000\000\000\000\000L\211\352L\211\366D\211\377A\377\024\334H\203\303\001H9\353u\352H\203\304\010[]A\\A]A^A_\303\220f.\017\037\204\000\000\000\000\000\363\303"
+  read_only: true
+  is_external: false
+  name: ".text"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 6295072
+  data: "\000\000\000\000\000\000\000\000"
+  read_only: false
+  is_external: false
+  name: ".jcr"
+  is_exported: false
+  is_thread_local: false
+  vars {
+    ea: 6295072
+    name: "__JCR_LIST__"
+  }
+}
+segments {
+  ea: 4197464
+  data: "\024\000\000\000\000\000\000\000\001zR\000\001x\020\001\033\014\007\010\220\001\007\020\024\000\000\000\034\000\000\000\210\371\377\377*\000\000\000\000\000\000\000\000\000\000\000\024\000\000\000\000\000\000\000\001zR\000\001x\020\001\033\014\007\010\220\001\000\000$\000\000\000\034\000\000\000\270\370\377\377\220\000\000\000\000\016\020F\016\030J\017\013w\010\200\000?\032;*3$\"\000\000\000\000\034\000\000\000D\000\000\000&\372\377\377w\000\000\000\000A\016\020\206\002C\r\006\002r\014\007\010\000\000\034\000\000\000d\000\000\000}\372\377\377\353\002\000\000\000A\016\020\206\002C\r\006\003\346\002\014\007\010\000D\000\000\000\204\000\000\000P\375\377\377e\000\000\000\000B\016\020\217\002B\016\030\216\003E\016 \215\004B\016(\214\005H\0160\206\006H\0168\203\007M\016@r\0168A\0160A\016(B\016 B\016\030B\016\020B\016\010\000\024\000\000\000\314\000\000\000x\375\377\377\002\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000"
+  read_only: true
+  is_external: false
+  name: ".eh_frame"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 4197404
+  data: "\001\033\003;8\000\000\000\006\000\000\000D\371\377\377\204\000\000\000\344\371\377\377T\000\000\000\332\372\377\377\254\000\000\000Q\373\377\377\314\000\000\000D\376\377\377\354\000\000\000\264\376\377\3774\001\000\000"
+  read_only: true
+  is_external: false
+  name: ".eh_frame_hdr"
+  is_exported: false
+  is_thread_local: false
+}
+segments {
+  ea: 4197088
+  data: "\001\000\002\000\000\000\000\000Maze dimensions: %dx%d\n\000Player position: %dx%d\n\000Iteration no. %d\n\000\000\000\000\000\000\000Program the player moves with a sequence of \'w\', \'s\', \'a\' and \'d\'\000Try to reach the price(#)!\000\000\000\000Wrong command, only w,s,a,d are accepted!)\000You lose!\000You win!\000Your solution <%42s>\n\000Blocked!\000\000\000\000Iteration no. %d. Action: %c. %s\n\000You lose\000"
+  read_only: true
+  is_external: false
+  name: ".rodata"
+  is_exported: false
+  is_thread_local: false
+  vars {
+    ea: 4197096
+    name: "format"
+  }
+  vars {
+    ea: 4197120
+    name: "aPlayerPosition"
+  }
+  vars {
+    ea: 4197144
+    name: "aIterationNo_D"
+  }
+  vars {
+    ea: 4197168
+    name: "s"
+  }
+  vars {
+    ea: 4197234
+    name: "aTryToReachTheP"
+  }
+  vars {
+    ea: 4197264
+    name: "aWrongCommandOn"
+  }
+  vars {
+    ea: 4197307
+    name: "aYouLose"
+  }
+  vars {
+    ea: 4197317
+    name: "aYouWin"
+  }
+  vars {
+    ea: 4197326
+    name: "aYourSolution42"
+  }
+  vars {
+    ea: 4197348
+    name: "aBlocked"
+  }
+  vars {
+    ea: 4197360
+    name: "aIterationNo_D_"
+  }
+  vars {
+    ea: 4197394
+    name: "aYouLose_0"
+  }
+}
+external_funcs {
+  name: "puts"
+  ea: 4195712
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "exit"
+  ea: 6295808
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "sleep"
+  ea: 6295816
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "__stack_chk_fail"
+  ea: 4195728
+  cc: CallerCleanup
+  has_return: false
+  no_return: true
+  argument_count: 0
+  is_weak: true
+}
+external_funcs {
+  name: "__gmon_start__"
+  ea: 6295896
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 0
+  is_weak: true
+}
+external_funcs {
+  name: "exit"
+  ea: 4195792
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "puts"
+  ea: 6295832
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "__stack_chk_fail"
+  ea: 6295840
+  cc: CallerCleanup
+  has_return: false
+  no_return: true
+  argument_count: 0
+  is_weak: true
+}
+external_funcs {
+  name: "putchar"
+  ea: 4195696
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "printf"
+  ea: 6295848
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 16
+  is_weak: true
+}
+external_funcs {
+  name: "read"
+  ea: 6295856
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 3
+  is_weak: true
+}
+external_funcs {
+  name: "read"
+  ea: 4195760
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 3
+  is_weak: true
+}
+external_funcs {
+  name: "__libc_start_main"
+  ea: 6295864
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 8
+  is_weak: true
+}
+external_funcs {
+  name: "__libc_start_main"
+  ea: 4195776
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 8
+  is_weak: true
+}
+external_funcs {
+  name: "printf"
+  ea: 4195744
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 16
+  is_weak: true
+}
+external_funcs {
+  name: "sleep"
+  ea: 6295880
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "putchar"
+  ea: 6295760
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "exit"
+  ea: 6295872
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "puts"
+  ea: 6295768
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "__stack_chk_fail"
+  ea: 6295776
+  cc: CallerCleanup
+  has_return: false
+  no_return: true
+  argument_count: 0
+  is_weak: true
+}
+external_funcs {
+  name: "putchar"
+  ea: 6295824
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "printf"
+  ea: 6295784
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 16
+  is_weak: true
+}
+external_funcs {
+  name: "read"
+  ea: 6295792
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 3
+  is_weak: true
+}
+external_funcs {
+  name: "sleep"
+  ea: 4195808
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 1
+  is_weak: true
+}
+external_funcs {
+  name: "__libc_start_main"
+  ea: 6295800
+  cc: CallerCleanup
+  has_return: true
+  no_return: false
+  argument_count: 8
+  is_weak: true
+}

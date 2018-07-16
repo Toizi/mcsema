@@ -266,3 +266,14 @@ def get_instruction_at(ea):
   if insts:
     return insts[0]
   return None
+
+def get_memory_displacement(inst):
+  '''inst is ea or decoded inst (aoj). returns None if no displacement'''
+  if isinstance(inst, (int, long)):
+    inst_decoded = r2_cmdj('aoj 1 @ {}'.format(inst))[0]
+  else:
+    inst_decoded = inst
+  
+  opex = inst_decoded['opex']
+  disp = opex.get('disp')
+  return disp

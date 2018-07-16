@@ -3,9 +3,11 @@ import traceback
 import logging
 
 r2 = None
+BINARY_PATH = None
 def r2_init(path):
-  global r2
+  global r2, BINARY_PATH
   r2 = r2pipe.open(path, ['-2'])
+  BINARY_PATH = path
 
 def r2_cmd(cmd):
   result = None
